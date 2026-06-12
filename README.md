@@ -1,32 +1,112 @@
-# 🎬 유튜브 영상 제작을 위한 맞춤형 피드백 서비스
+<div align="center">
 
-배포 주소 : https://yudaag.github.io/youtube/index.html
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=200&section=header&text=YouTube%20Analytics&fontSize=50&fontColor=white&animation=fadeIn&fontAlignY=38&desc=유튜브%20크리에이터를%20위한%20AI%20기반%20맞춤형%20피드백%20플랫폼&descAlignY=55&descSize=16" width="100%"/>
 
-2025 유튜브 영상 데이터를 기반으로, 분석부터 맞춤형 피드백까지 모든 유튜버가 성장할 수 있는 유튜브 생태계를 만듭니다.
+<br/>
 
-YouTube 영상 분석을 통한 월별 트렌드, 조회수 예측, 태그 & 제목 추천을 제공하는 종합 분석 플랫폼입니다.
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+[![Railway](https://img.shields.io/badge/Deploy-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/)
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<br/>
 
-## 🚀 빠른 시작
+**[🌐 라이브 데모](https://yudaag.github.io/youtube/index.html)** · **[📚 API 문서](http://localhost:8001/docs)** · **[🐛 버그 리포트](https://github.com/young017/YOUTUBE2/issues)**
+
+<br/>
+
+> 2025 유튜브 영상 데이터를 기반으로 분석부터 맞춤형 피드백까지  
+> 모든 크리에이터가 성장할 수 있는 AI 인텔리전스 플랫폼
+
+</div>
+
+<br/>
+
+## 목차
+
+- [주요 기능](#-주요-기능)
+- [기술 스택](#-기술-스택)
+- [시작하기](#-시작하기)
+- [환경 변수](#-환경-변수)
+- [API 레퍼런스](#-api-레퍼런스)
+- [프로젝트 구조](#-프로젝트-구조)
+- [배포](#-배포)
+- [기여하기](#-기여하기)
+- [라이선스](#-라이선스)
+
+<br/>
+
+## ✨ 주요 기능
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🔮 조회수 예측</h3>
+      <p>카테고리별 최적화된 ML 모델(CatBoost · LightGBM · XGBoost)로 업로드 전 예상 조회수와 인기 확률을 예측합니다.</p>
+    </td>
+    <td width="50%">
+      <h3>🏷️ AI 태그 추천</h3>
+      <p>SBERT 기반 시맨틱 유사도와 OpenAI 임베딩을 결합한 하이브리드 태그 추천으로 최적의 태그를 제안합니다.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>✍️ 제목 자동 생성</h3>
+      <p>GPT 기반 SEO 최적화 제목 생성기로 클릭률을 높이는 매력적인 제목을 자동으로 만들어 줍니다.</p>
+    </td>
+    <td width="50%">
+      <h3>📊 트렌드 분석</h3>
+      <p>Kaggle YouTube 데이터를 기반으로 월별 인기 카테고리 트렌드를 분석하고 시각화합니다.</p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+## 🛠 기술 스택
+
+<div align="center">
+
+| 분류 | 기술 |
+|:---:|:---|
+| **Backend** | ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Python](https://img.shields.io/badge/-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white) ![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) |
+| **ML / AI** | ![CatBoost](https://img.shields.io/badge/-CatBoost-FFCC00?style=flat-square&logoColor=black) ![LightGBM](https://img.shields.io/badge/-LightGBM-2E7D32?style=flat-square&logoColor=white) ![XGBoost](https://img.shields.io/badge/-XGBoost-FF6600?style=flat-square&logoColor=white) |
+| **NLP** | ![SBERT](https://img.shields.io/badge/-SBERT-4B0082?style=flat-square&logoColor=white) ![OpenAI](https://img.shields.io/badge/-OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white) |
+| **Data** | ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Kaggle](https://img.shields.io/badge/-Kaggle_API-20BEFF?style=flat-square&logo=kaggle&logoColor=white) |
+| **Infra** | ![Railway](https://img.shields.io/badge/-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white) ![HuggingFace](https://img.shields.io/badge/-HuggingFace_Hub-FFD21E?style=flat-square&logo=huggingface&logoColor=black) |
+
+</div>
+
+<br/>
+
+## 🚀 시작하기
+
+### 사전 요구사항
+
+- Python **3.11** 이상
+- pip 패키지 관리자
+
+### 설치
 
 ```bash
 # 1. 저장소 클론
-git clone <repository-url>
-cd youtube
+git clone https://github.com/young017/YOUTUBE2.git
+cd YOUTUBE2
 
 # 2. 가상 환경 생성 및 활성화
 python -m venv venv
-venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Linux/Mac
 
-# 3. 패키지 설치
+# Windows
+venv\Scripts\activate
+# macOS / Linux
+source venv/bin/activate
+
+# 3. 의존성 설치
 pip install -r requirements.txt
 
-# 4. 환경 변수 설정 (.env 파일 생성)
-OPENAI_API_KEY=your_key_here
+# 4. 환경 변수 설정 (.env 파일 생성 — 아래 섹션 참고)
 
 # 5. 데이터베이스 초기화
 python init_database.py
@@ -35,100 +115,181 @@ python init_database.py
 python fastapi_server.py
 ```
 
-서버 실행 후: http://localhost:8001/docs
+서버 실행 후 아래 주소에서 확인하세요.
 
-## 📋 목차
+| 주소 | 설명 |
+|---|---|
+| http://localhost:8001 | API 서버 |
+| http://localhost:8001/docs | Swagger UI (추천) |
+| http://localhost:8001/redoc | ReDoc |
 
-- [주요 기능](#-주요-기능)
-- [빠른 시작](#-빠른-시작)
-- [기술 스택](#-기술-스택)
-- [설치 및 실행](#-설치-및-실행)
-- [API 사용 예시](#-api-사용-예시)
-- [환경 변수 설정](#-환경-변수-설정)
-- [문제 해결](#-문제-해결)
-- [프로젝트 구조](#-프로젝트-구조)
+<details>
+<summary><b>💡 자주 발생하는 설치 문제</b></summary>
 
-## ✨ 주요 기능
+<br/>
 
-### 1. 사용자 인증 및 관리
-- 회원가입, 로그인, 로그아웃
-- 세션 기반 인증
-- 사용자 프로필 관리
-- 활동 로그 기록
+**CatBoost 설치 실패 (Python 3.13)**
+```bash
+pip install catboost --no-build-isolation
+# Python 3.11 / 3.12 사용을 강력 권장합니다
+```
 
-### 2. 조회수 예측
-- 카테고리별 ML 모델을 통한 조회수 예측
-- 지원 모델: CatBoost, LightGBM, XGBoost
-- 인기 확률 및 예상 조회수 제공
-- 영상 정보 저장 및 관리
+**Hugging Face 모델 다운로드 실패**
+```bash
+pip install huggingface_hub
+huggingface-cli login  # 토큰 설정
+```
 
-### 3. 태그 추천 시스템
-- **기본 태그 추천**: SBERT 기반 유사도 추천
-- **하이브리드 추천**: 제목 유사도 + SBERT 결합
-- **태그 보정**: OpenAI GPT를 활용한 태그 개선
-- **태그 강화**: OpenAI 임베딩 + GPT를 통한 고품질 태그 생성
+**포트 충돌 (8001)**
+```bash
+# Windows
+set PORT=8002
+# macOS / Linux
+export PORT=8002
 
-### 4. 제목 생성
-- OpenAI GPT를 활용한 제목 자동 생성
-- 키워드 및 이미지 설명 기반 제목 추천
-- 클릭률 최적화 전략 반영
+python fastapi_server.py
+```
 
-### 5. 트렌드 분석
-- Kaggle 데이터를 활용한 월별 트렌드 분석
-- YouTube API를 통한 카테고리 정보 수집
-- 상위 카테고리 통계 제공
+**데이터베이스 파일 없음**
+```bash
+python init_database.py
+```
 
-## 🛠 기술 스택
+</details>
 
-### Backend
-- **FastAPI**: REST API 서버
-- **SQLite**: 사용자 및 영상 데이터 저장
-- **Python 3.11**: 개발 언어
+<br/>
 
-### Machine Learning
-- **CatBoost**: 카테고리 1, 15, 19 조회수 예측
-- **LightGBM**: 카테고리 10, 22, 24, 26 조회수 예측
-- **XGBoost**: 카테고리 17, 20, 23, 28 조회수 예측
-- **SBERT**: 태그 추천을 위한 문장 임베딩
+## 🔐 환경 변수
 
-### AI/ML 서비스
-- **OpenAI API**: 태그 보정, 제목 생성
-- **Hugging Face Hub**: 모델 저장 및 다운로드
-- **Kaggle API**: 트렌드 데이터 수집
-- **YouTube Data API**: 영상 메타데이터 수집
+프로젝트 루트에 `.env` 파일을 생성하고 아래 변수를 설정하세요.
 
-### 기타 라이브러리
-- pandas, numpy: 데이터 처리
-- sentence-transformers: 문장 임베딩
-- scikit-learn: 유사도 계산
+```env
+# OpenAI API — 태그 보정 및 제목 생성에 사용 (선택)
+OPENAI_API_KEY=sk-...
+
+# Kaggle API — 트렌드 데이터 수집에 사용 (선택)
+KAGGLE_USERNAME=your_username
+KAGGLE_KEY=your_key
+
+# YouTube Data API — 카테고리 메타데이터 수집에 사용 (선택)
+YOUTUBE_API_KEY=your_youtube_key
+
+# 서버 포트 (기본값: 8001)
+PORT=8001
+```
+
+> **핵심 기능(조회수 예측, 기본 태그 추천)은 API 키 없이도 동작합니다.**  
+> OpenAI · Kaggle · YouTube API 키는 해당 기능 사용 시에만 필요합니다.
+
+<details>
+<summary><b>API 키 발급 방법</b></summary>
+
+<br/>
+
+**OpenAI** → https://platform.openai.com/api-keys  
+**Kaggle** → 계정 설정 → API → Create New Token → `kaggle.json`에서 추출  
+**YouTube Data API v3** → Google Cloud Console → API 및 서비스 → 사용자 인증 정보
+
+</details>
+
+<br/>
+
+## 📡 API 레퍼런스
+
+### 인증
+
+| Method | Endpoint | 설명 |
+|:---:|---|---|
+| `POST` | `/api/auth/register` | 회원가입 |
+| `POST` | `/api/auth/login` | 로그인 |
+| `POST` | `/api/auth/logout` | 로그아웃 |
+| `GET` | `/api/auth/profile` | 프로필 조회 |
+
+### 핵심 기능
+
+| Method | Endpoint | 설명 |
+|:---:|---|---|
+| `POST` | `/api/videos/create` | 영상 저장 + 조회수 예측 |
+| `GET` | `/api/videos/list` | 내 영상 목록 |
+| `POST` | `/api/tags/recommend` | 태그 추천 (SBERT · 하이브리드) |
+| `POST` | `/api/tags/enrich` | 태그 강화 (OpenAI) |
+| `POST` | `/api/titles/generate` | 제목 자동 생성 (GPT) |
+| `POST` | `/api/trends/update-month` | 월별 트렌드 분석 |
+
+<details>
+<summary><b>사용 예시 보기</b></summary>
+
+<br/>
+
+**조회수 예측**
+```python
+import requests
+
+response = requests.post(
+    "http://localhost:8001/api/videos/create",
+    params={"session_token": "<your_token>"},
+    json={
+        "title": "맛있는 파스타 만들기",
+        "category": "26",
+        "length": 15.5,
+        "upload_time": "2025-01-15T18:00",
+        "has_subtitles": "provided",
+        "video_quality": "HD",
+        "subscriber_count": 100000,
+    },
+)
+result = response.json()["data"]["prediction"]
+print(f"예상 조회수: {result['predicted_views']:,}")
+print(f"인기 확률:   {result['confidence']:.1f}%")
+```
+
+**태그 추천**
+```python
+response = requests.post(
+    "http://localhost:8001/api/tags/recommend",
+    json={"title": "맛있는 파스타 만들기", "top_k": 10, "method": "hybrid"},
+)
+print(response.json()["recommended_tags"])
+```
+
+**제목 생성**
+```python
+response = requests.post(
+    "http://localhost:8001/api/titles/generate",
+    json={"keyword": "파스타 레시피", "imageText": "크림 파스타 요리 과정", "n": 5},
+)
+for title in response.json()["titles"]:
+    print(title)
+```
+
+</details>
+
+<br/>
 
 ## 📁 프로젝트 구조
 
 ```
-youtube/
-├── fastapi_server.py          # FastAPI 메인 서버
-├── database.py                # SQLite 데이터베이스 관리
-├── init_database.py           # 데이터베이스 초기화 스크립트
-├── enrich_tags.py             # 태그 강화 파이프라인
-├── requirements.txt           # Python 패키지 의존성
-├── runtime.txt                # Python 버전 명시
-├── railway.json               # Railway 배포 설정
+YOUTUBE2/
+├── fastapi_server.py        # FastAPI 애플리케이션 진입점
+├── database.py              # SQLite 데이터베이스 레이어
+├── init_database.py         # DB 초기화 및 데모 계정 생성
+├── enrich_tags.py           # 태그 강화 파이프라인
+├── requirements.txt
+├── runtime.txt
+├── railway.json             # Railway 배포 설정
 │
-├── tags/                      # 태그 추천 모듈
-│   ├── __init__.py
-│   ├── tag_recommendation_model.py  # 태그 추천 모델
+├── tags/                    # 태그 추천 모듈
+│   ├── tag_recommendation_model.py
 │   ├── predict_tags.py
 │   ├── enrich_tags.py
-│   ├── enrich_tags_openai_embed.py
-│   ├── fastapi_server.py
-│   └── tag_recommendation_model.pkl  # 학습된 모델
+│   └── enrich_tags_openai_embed.py
 │
-├── 모델/                      # 조회수 예측 모델 (Hugging Face에서 다운로드)
-│   ├── catboost_model_*.cbm
-│   ├── lgbm_model_*.pkl
-│   └── xgb_model_*.pkl
+├── 모델/                    # ML 예측 모델 (HuggingFace 자동 다운로드)
+│   ├── catboost_model_*.cbm    # 카테고리 1, 15, 19
+│   ├── lgbm_model_*.pkl        # 카테고리 10, 22, 24, 26
+│   └── xgb_model_*.pkl         # 카테고리 17, 20, 23, 28
 │
-├── UI/                        # 웹 프론트엔드
+├── UI/                      # 웹 프론트엔드
 │   ├── index.html
 │   ├── login.html
 │   ├── signup.html
@@ -137,517 +298,81 @@ youtube/
 │   ├── feedback-result.html
 │   └── trend.html
 │
-└── docs/                      # 문서 (UI와 동일)
-    └── ...
+└── docs/                    # 배포용 정적 파일 (UI 미러)
 ```
 
-## 🚀 설치 및 실행
-
-### 필수 요구사항
-
-- Python 3.11 이상
-- pip 패키지 관리자
-- (선택) OpenAI API 키 (태그/제목 기능 사용 시)
-- (선택) Kaggle API 키 (트렌드 분석 사용 시)
-- (선택) YouTube Data API 키 (트렌드 분석 사용 시)
-
-### 단계별 설치
-
-#### 1. 저장소 클론
-
-```bash
-git clone <repository-url>
-cd youtube
-```
-
-#### 2. 가상 환경 생성 및 활성화
-
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Linux/Mac
-python3 -m venv venv
-source venv/bin/activate
-```
-
-#### 3. 패키지 설치
-
-```bash
-pip install -r requirements.txt
-```
-
-> **참고**: CatBoost 설치 시 Python 3.13 호환성 문제가 있을 수 있습니다. Python 3.11 또는 3.12 사용을 권장합니다.
-
-#### 4. 환경 변수 설정
-
-프로젝트 루트에 `.env` 파일을 생성하고 필요한 API 키를 설정하세요:
-
-```env
-# OpenAI API (태그 보정, 제목 생성) - 선택사항
-OPENAI_API_KEY=your_openai_api_key
-
-# Kaggle API (트렌드 분석) - 선택사항
-KAGGLE_USERNAME=your_kaggle_username
-KAGGLE_KEY=your_kaggle_key
-
-# YouTube Data API (트렌드 분석) - 선택사항
-YOUTUBE_API_KEY=your_youtube_api_key
-```
-
-#### 5. 데이터베이스 초기화
-
-```bash
-python init_database.py
-```
-
-데모 계정이 자동으로 생성됩니다:
-- 이메일: `demo@youtubeanalytics.com`
-- 비밀번호: `demo123`
-
-#### 6. 서버 실행
-
-```bash
-python fastapi_server.py
-```
-
-서버가 실행되면 다음 주소에서 접근할 수 있습니다:
-- 🌐 **API 서버**: http://localhost:8001
-- 📚 **Swagger UI**: http://localhost:8001/docs
-- 📖 **ReDoc**: http://localhost:8001/redoc
-
-## 📚 API 문서
-
-서버 실행 후 다음 엔드포인트에서 인터랙티브 API 문서를 확인할 수 있습니다:
-
-- **Swagger UI**: http://localhost:8001/docs (추천)
-- **ReDoc**: http://localhost:8001/redoc
-
-## 💻 API 사용 예시
-
-### 1. 회원가입
-
-```python
-import requests
-
-response = requests.post("http://localhost:8001/api/auth/register", json={
-    "email": "user@example.com",
-    "password": "password123",
-    "name": "홍길동",
-    "role": "creator"
-})
-print(response.json())
-```
-
-### 2. 로그인
-
-```python
-response = requests.post("http://localhost:8001/api/auth/login", json={
-    "email": "user@example.com",
-    "password": "password123"
-})
-data = response.json()
-session_token = data["data"]["session_token"]
-```
-
-### 3. 태그 추천
-
-```python
-response = requests.post("http://localhost:8001/api/tags/recommend", json={
-    "title": "맛있는 파스타 만들기",
-    "top_k": 10,
-    "method": "hybrid"  # hybrid, sbert, similarity
-})
-tags = response.json()["recommended_tags"]
-print(f"추천 태그: {tags}")
-```
-
-### 4. 조회수 예측
-
-```python
-response = requests.post(
-    "http://localhost:8001/api/videos/create",
-    params={"session_token": session_token},
-    json={
-        "title": "맛있는 파스타 만들기",
-        "category": "26",  # 카테고리 ID
-        "length": 15.5,  # 분
-        "upload_time": "2025-01-15T18:00",
-        "has_subtitles": "provided",
-        "video_quality": "HD",
-        "subscriber_count": 100000
-    }
-)
-prediction = response.json()["data"]["prediction"]
-print(f"예상 조회수: {prediction['predicted_views']:,}")
-print(f"인기 확률: {prediction['confidence']:.1f}%")
-```
-
-### 5. 제목 생성
-
-```python
-response = requests.post("http://localhost:8001/api/titles/generate", json={
-    "keyword": "파스타 레시피",
-    "imageText": "크림 파스타 요리 과정",
-    "n": 5
-})
-titles = response.json()["titles"]
-for i, title in enumerate(titles, 1):
-    print(f"{i}. {title}")
-```
-
-### 주요 API 엔드포인트
-
-| 엔드포인트 | 메서드 | 설명 |
-|-----------|--------|------|
-| `/api/auth/register` | POST | 회원가입 |
-| `/api/auth/login` | POST | 로그인 |
-| `/api/auth/logout` | POST | 로그아웃 |
-| `/api/auth/profile` | GET | 프로필 조회 |
-| `/api/tags/recommend` | POST | 기본 태그 추천 |
-| `/api/tags/enrich` | POST | 태그 강화 (OpenAI) |
-| `/api/titles/generate` | POST | 제목 자동 생성 |
-| `/api/videos/create` | POST | 영상 저장 및 조회수 예측 |
-| `/api/videos/list` | GET | 영상 목록 조회 |
-| `/api/trends/update-month` | POST | 월별 트렌드 분석 |
-
-## 🔧 환경 변수 설정
-
-### 환경 변수 목록
-
-| 변수명 | 설명 | 필수 여부 | 기본값 |
-|--------|------|----------|--------|
-| `OPENAI_API_KEY` | OpenAI API 키 (태그 보정, 제목 생성) | 태그/제목 기능 사용 시 | - |
-| `KAGGLE_USERNAME` | Kaggle 사용자명 | 트렌드 분석 사용 시 | - |
-| `KAGGLE_KEY` | Kaggle API 키 | 트렌드 분석 사용 시 | - |
-| `YOUTUBE_API_KEY` | YouTube Data API 키 | 트렌드 분석 사용 시 | - |
-| `PORT` | 서버 포트 | 선택 | 8001 |
-
-### API 키 발급 방법
-
-#### OpenAI API 키
-1. https://platform.openai.com/api-keys 접속
-2. 계정 생성 또는 로그인
-3. "Create new secret key" 클릭
-4. 생성된 키를 `.env` 파일에 추가
-
-#### Kaggle API 키
-1. https://www.kaggle.com/ 접속
-2. 계정 설정 → API → "Create New Token" 클릭
-3. 다운로드된 `kaggle.json` 파일에서 `username`과 `key` 추출
-4. `.env` 파일에 추가
-
-#### YouTube Data API 키
-1. https://console.cloud.google.com/ 접속
-2. 새 프로젝트 생성
-3. YouTube Data API v3 활성화
-4. 사용자 인증 정보 → API 키 생성
-5. `.env` 파일에 추가
-
-### 환경 변수 설정 방법
-
-1. 프로젝트 루트에 `.env` 파일 생성
-2. 위의 변수들을 설정
-3. 서버 재시작
-
-```bash
-# .env 파일 예시
-OPENAI_API_KEY=sk-...
-KAGGLE_USERNAME=your_username
-KAGGLE_KEY=your_key
-YOUTUBE_API_KEY=your_youtube_key
-```
-
-## 🔍 문제 해결
-
-### 자주 발생하는 문제
-
-#### 1. CatBoost 설치 실패
-
-**문제**: Python 3.13에서 CatBoost 설치 실패
-
-**해결책**:
-```bash
-pip install catboost --no-build-isolation
-# 또는 Python 3.11/3.12 사용 권장
-```
-
-#### 2. 모델 다운로드 실패
-
-**문제**: Hugging Face에서 모델 다운로드 실패
-
-**해결책**:
-- 인터넷 연결 확인
-- Hugging Face Hub 토큰 설정 (필요 시):
-```bash
-pip install huggingface_hub
-huggingface-cli login
-```
-
-#### 3. 데이터베이스 오류
-
-**문제**: `youtube_analytics.db` 파일이 없음
-
-**해결책**:
-```bash
-python init_database.py
-```
-
-#### 4. 포트 충돌
-
-**문제**: 포트 8001이 이미 사용 중
-
-**해결책**:
-```bash
-# 다른 포트 사용
-export PORT=8002  # Linux/Mac
-set PORT=8002     # Windows
-python fastapi_server.py
-```
-
-#### 5. 한글 인코딩 오류
-
-**문제**: 한글이 깨져서 표시됨
-
-**해결책**:
-- 데이터베이스가 UTF-8로 설정되어 있는지 확인
-- `init_database.py`를 다시 실행하여 데이터베이스 재생성
-
-## 📖 주요 기능 상세
-
-### 1. 조회수 예측
-
-카테고리별로 최적화된 ML 모델을 사용하여 조회수를 예측합니다.
-
-**입력 데이터:**
-- 영상 제목
-- 카테고리 ID (필수)
-- 영상 길이 (분)
-- 업로드 예정 시간
-- 자막 제공 여부 (`provided` / `not_provided`)
-- 해상도 품질 (`HD` / `SD`)
-- 구독자 수
-
-**출력:**
-- 예상 조회수 (정수)
-- 인기 확률 (0-1 사이의 실수)
-- 사용된 모델 정보
-
-**지원 카테고리 및 모델:**
-- **CatBoost**: 카테고리 1, 15, 19
-- **LightGBM**: 카테고리 10, 22, 24, 26
-- **XGBoost**: 카테고리 17, 20, 23, 28
-
-모델은 Hugging Face Hub에서 자동으로 다운로드됩니다.
-
-### 2. 태그 추천 시스템
-
-#### 기본 태그 추천 (`/api/tags/recommend`)
-- **SBERT 기반**: 제목-태그 직접 유사도 계산
-- **유사 제목 기반**: 유사한 제목의 태그 추천
-- **하이브리드**: 두 방법을 결합한 추천 (기본값)
-
-**사용 예시:**
-```python
-# 하이브리드 방식 (기본)
-response = requests.post("/api/tags/recommend", json={
-    "title": "맛있는 파스타 만들기",
-    "top_k": 10,
-    "method": "hybrid"
-})
-```
-
-#### 태그 강화 (`/api/tags/enrich`)
-OpenAI 임베딩과 GPT를 활용한 고품질 태그 생성
-
-**처리 과정:**
-1. 기본 모델로 후보 태그 생성
-2. OpenAI 임베딩으로 제목-태그 유사도 재계산
-3. 유사도 임계값(기본 0.30) 기반 필터링
-4. GPT를 통한 최종 태그 보정 및 추가 태그 생성
-
-**파라미터:**
-- `top_k`: 후보 태그 개수 (기본 15)
-- `title_sim_threshold`: 제목 유사도 임계값 (기본 0.30)
-- `tag_abs_threshold`: 태그 유사도 임계값 (기본 0.30)
-- `extra_k`: 추가 태그 개수 (기본 10)
-
-### 3. 제목 생성
-
-OpenAI GPT를 활용하여 키워드 기반 제목을 생성합니다.
-
-**최적화 전략:**
-- ✅ 키워드 앞부분 배치 (SEO)
-- ✅ 숫자/괄호 활용 (클릭률 향상)
-- ✅ 질문형, 가치 제시형 제목
-- ✅ 홀수 숫자 활용 (7, 9 등)
-- ✅ 감탄사/수식어 활용
-
-**사용 예시:**
-```python
-response = requests.post("/api/titles/generate", json={
-    "keyword": "파스타 레시피",
-    "imageText": "크림 파스타 요리 과정",  # 선택사항
-    "n": 5  # 생성할 제목 개수
-})
-```
-
-### 4. 트렌드 분석
-
-Kaggle의 YouTube 트렌드 데이터를 활용하여 월별 인기 카테고리를 분석합니다.
-
-**기능:**
-- 2025년 한국(KR) 데이터 자동 필터링
-- 월별 상위 5개 카테고리 통계
-- YouTube API를 통한 카테고리 정보 수집
-- 상위 30% 영상 기준 분석
-
-**사용 예시:**
-```python
-response = requests.post("/api/trends/update-month?month=1")
-trends = response.json()["data"]["trends"]
-```
-
-## 🗄 데이터베이스
-
-SQLite 데이터베이스를 사용하며, UTF-8 인코딩을 지원합니다.
-
-### 테이블 구조
-
-| 테이블명 | 설명 |
-|---------|------|
-| `users` | 사용자 정보 (이메일, 비밀번호 해시, 프로필 등) |
-| `user_sessions` | 세션 관리 (토큰, 만료 시간 등) |
-| `user_activity_logs` | 사용자 활동 로그 (로그인, 회원가입 등) |
-| `videos` | 영상 정보 (제목, 카테고리, 조회수 예측 결과 등) |
-
-**데이터베이스 파일**: `youtube_analytics.db` (프로젝트 루트)
-
-### 데이터베이스 초기화
-
-```bash
-python init_database.py
-```
-
-초기화 시 데모 계정이 자동으로 생성됩니다:
-- **데모 계정**: `demo@youtubeanalytics.com` / `demo123`
-- **관리자 계정**: `admin@youtubeanalytics.com` / `admin123`
+<br/>
 
 ## 🚢 배포
 
-### Railway 배포
+### Railway (권장)
 
-`railway.json` 파일이 포함되어 있어 Railway에서 바로 배포할 수 있습니다.
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/)
 
-**배포 단계:**
-1. [Railway](https://railway.app/)에 로그인
-2. "New Project" → "Deploy from GitHub repo" 선택
-3. 이 저장소 연결
-4. 환경 변수 설정 (`.env` 파일의 변수들)
-5. 자동 배포 완료
+1. [Railway](https://railway.app/)에서 **New Project → Deploy from GitHub repo** 선택
+2. 이 저장소 연결
+3. **Variables** 탭에서 `.env` 변수 설정
+4. 자동 배포 완료
 
-**Railway 환경 변수 설정:**
-- Railway 대시보드 → Variables 탭에서 설정
-- 또는 `.env` 파일을 Railway에 업로드
+### Docker
 
-### 기타 플랫폼
-
-#### Heroku
-```bash
-# Procfile 생성
-echo "web: uvicorn fastapi_server:app --host 0.0.0.0 --port \$PORT" > Procfile
-
-# 배포
-git push heroku main
-```
-
-#### Docker
 ```dockerfile
 FROM python:3.11-slim
 WORKDIR /app
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
+EXPOSE 8000
 CMD ["uvicorn", "fastapi_server:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-#### 일반 서버
+### 기타 플랫폼 (Heroku / VPS)
+
 ```bash
-# Python 3.11 필수
+# Procfile
+echo "web: uvicorn fastapi_server:app --host 0.0.0.0 --port \$PORT" > Procfile
+
+# 실행
 uvicorn fastapi_server:app --host 0.0.0.0 --port 8000
 ```
 
-**주의사항:**
-- 모든 환경 변수를 서버에 설정해야 합니다
-- 모델은 첫 실행 시 Hugging Face에서 자동 다운로드됩니다
-- 데이터베이스 파일(`youtube_analytics.db`)은 영구 저장소에 저장하세요
+> **배포 시 주의사항**  
+> - 모든 환경 변수를 서버에 등록하세요.  
+> - ML 모델은 첫 실행 시 Hugging Face Hub에서 자동으로 다운로드됩니다.  
+> - `youtube_analytics.db`는 영구 스토리지에 마운트하여 데이터 손실을 방지하세요.
 
-## 📁 프로젝트 구조
+<br/>
+
+## 🤝 기여하기
+
+기여는 언제나 환영합니다! 아래 절차를 따라 주세요.
 
 ```
-youtube/
-├── fastapi_server.py          # FastAPI 메인 서버
-├── database.py                # SQLite 데이터베이스 관리
-├── init_database.py           # 데이터베이스 초기화 스크립트
-├── enrich_tags.py             # 태그 강화 파이프라인
-├── requirements.txt           # Python 패키지 의존성
-├── runtime.txt                # Python 버전 명시
-├── railway.json               # Railway 배포 설정
-│
-├── tags/                      # 태그 추천 모듈
-│   ├── tag_recommendation_model.py
-│   ├── predict_tags.py
-│   └── ...
-│
-├── 모델/                      # 조회수 예측 모델 (Hugging Face에서 다운로드)
-│   ├── catboost_model_*.cbm
-│   ├── lgbm_model_*.pkl
-│   └── xgb_model_*.pkl
-│
-├── UI/                        # 웹 프론트엔드
-│   ├── index.html
-│   ├── login.html
-│   └── ...
-│
-└── docs/                      # 문서
-    └── ...
+1. Fork  →  2. 브랜치 생성 (feat/your-feature)  →  3. 커밋  →  4. PR 제출
 ```
-
-## 🤝 기여
-
-기여를 환영합니다! 다음 방법으로 기여할 수 있습니다:
-
-1. **이슈 등록**: 버그 리포트나 기능 제안
-2. **Pull Request**: 코드 개선 사항 제출
-3. **문서 개선**: README나 문서 개선
-
-### 개발 환경 설정
 
 ```bash
-# 개발용 패키지 설치
-pip install -r requirements.txt
-pip install pytest  # 테스트용
-
-# 코드 포맷팅 (선택사항)
-pip install black isort
+git checkout -b feat/your-feature
+git commit -m "feat: 기능 설명"
+git push origin feat/your-feature
 ```
 
-## 📝 라이선스
+버그 리포트나 기능 제안은 **[Issues](https://github.com/young017/YOUTUBE2/issues)** 에 남겨 주세요.
 
-이 프로젝트의 라이선스 정보를 여기에 추가하세요.
+<br/>
 
-## 📧 문의 및 지원
+## 📄 라이선스
 
-- **이슈 등록**: GitHub Issues에서 버그 리포트나 기능 제안
-- **문서**: `/docs` 엔드포인트에서 API 문서 확인
+이 프로젝트는 [MIT License](LICENSE) 하에 배포됩니다.
 
-## 🙏 감사의 말
-
-이 프로젝트는 YouTube 크리에이터를 위한 도구로 개발되었습니다.
+<br/>
 
 ---
 
+<div align="center">
+
 **Made with ❤️ for YouTube Creators**
 
-> 💡 **팁**: API 문서는 서버 실행 후 http://localhost:8001/docs 에서 확인하세요!
+<sub>API 문서는 서버 실행 후 <a href="http://localhost:8001/docs">http://localhost:8001/docs</a> 에서 확인하세요.</sub>
+
+</div>
