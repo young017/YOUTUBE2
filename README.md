@@ -1,26 +1,10 @@
-<div align="center">
+# YouTube Analytics
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=200&section=header&text=YouTube%20Analytics&fontSize=50&fontColor=white&animation=fadeIn&fontAlignY=38&desc=유튜브%20크리에이터를%20위한%20AI%20기반%20맞춤형%20피드백%20플랫폼&descAlignY=55&descSize=16" width="100%"/>
+유튜브 크리에이터를 위한 AI 기반 맞춤형 피드백 플랫폼
 
-<br/>
-
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Railway](https://img.shields.io/badge/Deploy-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/)
-
-<br/>
-
-**[🌐 라이브 데모](https://yudaag.github.io/youtube/index.html)** · **[📚 API 문서](http://localhost:8001/docs)** · **[🐛 버그 리포트](https://github.com/young017/YOUTUBE2/issues)**
-
-<br/>
-
-> 2025 유튜브 영상 데이터를 기반으로 분석부터 맞춤형 피드백까지  
-> 모든 크리에이터가 성장할 수 있는 AI 인텔리전스 플랫폼
-
-</div>
+- [라이브 데모](https://yudaag.github.io/youtube/index.html)
+- [API 문서](http://localhost:8001/docs)
+- [버그 리포트](https://github.com/young017/YOUTUBE2/issues)
 
 <br/>
 
@@ -38,46 +22,22 @@
 
 <br/>
 
-## ✨ 주요 기능
+## 주요 기능
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🔮 조회수 예측</h3>
-      <p>카테고리별 최적화된 ML 모델(CatBoost · LightGBM · XGBoost)로 업로드 전 예상 조회수와 인기 확률을 예측합니다.</p>
-    </td>
-    <td width="50%">
-      <h3>🏷️ AI 태그 추천</h3>
-      <p>SBERT 기반 시맨틱 유사도와 OpenAI 임베딩을 결합한 하이브리드 태그 추천으로 최적의 태그를 제안합니다.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>✍️ 제목 자동 생성</h3>
-      <p>GPT 기반 SEO 최적화 제목 생성기로 클릭률을 높이는 매력적인 제목을 자동으로 만들어 줍니다.</p>
-    </td>
-    <td width="50%">
-      <h3>📊 트렌드 분석</h3>
-      <p>Kaggle YouTube 데이터를 기반으로 월별 인기 카테고리 트렌드를 분석하고 시각화합니다.</p>
-    </td>
-  </tr>
-</table>
+- **조회수 예측**: CatBoost · LightGBM · XGBoost를 활용한 카테고리별 ML 모델로 업로드 전 예상 조회수와 인기 확률 예측
+- **AI 태그 추천**: SBERT 기반 시맨틱 유사도와 OpenAI 임베딩을 결합한 하이브리드 태그 추천
+- **제목 자동 생성**: GPT 기반 SEO 최적화 제목 생성기로 클릭률을 높이는 제목 생성
+- **트렌드 분석**: Kaggle YouTube 데이터를 기반으로 월별 인기 카테고리 트렌드 분석 및 시각화
 
 <br/>
 
-## 🛠 기술 스택
+## 기술 스택
 
-<div align="center">
-
-| 분류 | 기술 |
-|:---:|:---|
-| **Backend** | ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Python](https://img.shields.io/badge/-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white) ![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) |
-| **ML / AI** | ![CatBoost](https://img.shields.io/badge/-CatBoost-FFCC00?style=flat-square&logoColor=black) ![LightGBM](https://img.shields.io/badge/-LightGBM-2E7D32?style=flat-square&logoColor=white) ![XGBoost](https://img.shields.io/badge/-XGBoost-FF6600?style=flat-square&logoColor=white) |
-| **NLP** | ![SBERT](https://img.shields.io/badge/-SBERT-4B0082?style=flat-square&logoColor=white) ![OpenAI](https://img.shields.io/badge/-OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white) |
-| **Data** | ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Kaggle](https://img.shields.io/badge/-Kaggle_API-20BEFF?style=flat-square&logo=kaggle&logoColor=white) |
-| **Infra** | ![Railway](https://img.shields.io/badge/-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white) ![HuggingFace](https://img.shields.io/badge/-HuggingFace_Hub-FFD21E?style=flat-square&logo=huggingface&logoColor=black) |
-
-</div>
+- **Backend**: FastAPI, Python 3.11, SQLite
+- **ML/AI**: CatBoost, LightGBM, XGBoost
+- **NLP**: SBERT, OpenAI API
+- **Data**: Pandas, NumPy, Kaggle API
+- **Infra**: Railway, HuggingFace Hub
 
 <br/>
 
@@ -369,10 +329,4 @@ git push origin feat/your-feature
 
 ---
 
-<div align="center">
-
-**Made with ❤️ for YouTube Creators**
-
-<sub>API 문서는 서버 실행 후 <a href="http://localhost:8001/docs">http://localhost:8001/docs</a> 에서 확인하세요.</sub>
-
-</div>
+API 문서는 서버 실행 후 http://localhost:8001/docs 에서 확인하세요.
