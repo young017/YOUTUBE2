@@ -4,9 +4,12 @@
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![Railway](https://img.shields.io/badge/Deploy-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://railway.app/)
 
-# YouTube Analytics
+---
 
-유튜브 크리에이터를 위한 AI 기반 맞춤형 피드백 플랫폼
+# 유튜브 영상 제작을 위한 맞춤형 피드백 서비스
+
+2025 유튜브 영상 데이터를 기반으로, 분석부터 맞춤형 피드백까지
+모든 유튜버가 성장할 수 있는 유튜브 생태계를 만듭니다.
 
 - [라이브 데모](https://yudaag.github.io/youtube/index.html)
 - [API 문서](http://localhost:8001/docs)
@@ -26,7 +29,7 @@
 - [기여하기](#-기여하기)
 - [라이선스](#-라이선스)
 
----
+<br/>
 
 ## ✨ 주요 기능
 
