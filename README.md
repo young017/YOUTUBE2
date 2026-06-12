@@ -13,7 +13,7 @@
 - [버그 리포트](https://github.com/young017/YOUTUBE2/issues)
 
 <br/>
-
+---
 ## 목차
 
 - [주요 기능](#-주요-기능)
