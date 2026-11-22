@@ -10,7 +10,7 @@
 2025 유튜브 영상 데이터를 기반으로, 분석부터 맞춤형 피드백까지
 모든 유튜버가 성장할 수 있는 유튜브 생태계를 만듭니다.
 
-- [데모](https://yudaag.github.io/youtube/index.html)
+- [라이브 데모](https://yudaag.github.io/youtube/index.html)
 
 ## 주요 기능
 
