@@ -1,46 +1,27 @@
-<div align="center">
-
 # 유튜브 영상 제작을 위한 맞춤형 피드백 서비스
 
-2025 유튜브 영상 데이터를 기반으로, 분석부터 맞춤형 피드백까지<br/>
-모든 유튜버가 성장할 수 있는 유튜브 생태계를 만듭니다.
+2025 유튜브 영상 데이터를 기반으로, 분석부터 맞춤형 피드백까지 모든 유튜버가 성장할 수 있는 유튜브 생태계를 만듭니다.
 
 [데모 보기](https://yudaag.github.io/youtube/index.html)
 
-</div>
-
-<br/>
-
 ## 주요 기능
 
-<div align="center">
-
 | 기능 | 설명 |
-|:---:|:---|
+|:---|:---|
 | **조회수 예측** | 카테고리별 최적화된 ML 모델(CatBoost, LightGBM, XGBoost)로 업로드 전 예상 조회수와 인기 확률을 예측합니다. |
 | **태그 추천** | SBERT 시맨틱 유사도와 OpenAI 임베딩을 결합한 하이브리드 방식으로 태그를 추천합니다. |
 | **제목 생성** | GPT 기반 SEO 최적화 제목 생성기로 클릭률을 높이는 제목을 만들어 줍니다. |
 | **트렌드 분석** | Kaggle YouTube 데이터를 기반으로 월별 인기 카테고리 트렌드를 분석합니다. |
 
-</div>
-
-<br/>
-
 ## 기술 스택
 
-<div align="center">
-
 | 분류 | 기술 |
-|:---:|:---:|
+|:---|:---|
 | **Backend** | FastAPI, Python 3.11, SQLite |
 | **ML** | CatBoost, LightGBM, XGBoost |
 | **NLP** | SBERT, OpenAI API |
 | **Data** | Pandas, NumPy, Kaggle API |
 | **Infra** | Railway, Hugging Face Hub |
-
-</div>
-
-<br/>
 
 ## 시작하기
 
@@ -73,20 +54,14 @@ python fastapi_server.py
 
 서버 실행 후 아래 주소에서 확인할 수 있습니다.
 
-<div align="center">
-
 | 주소 | 설명 |
-|:---:|:---:|
+|:---|:---|
 | http://localhost:8001 | API 서버 |
 | http://localhost:8001/docs | Swagger UI |
 | http://localhost:8001/redoc | ReDoc |
 
-</div>
-
 <details>
 <summary><b>자주 발생하는 설치 문제</b></summary>
-
-<br/>
 
 **CatBoost 설치 실패 (Python 3.13)**
 ```bash
@@ -109,33 +84,23 @@ export PORT=8002
 
 </details>
 
-<br/>
-
 ## 환경 변수
 
 프로젝트 루트에 `.env` 파일을 만들고 필요한 변수를 설정합니다.
 
-<div align="center">
-
 | 변수 | 사용 기능 | 필수 여부 |
-|:---:|:---:|:---:|
+|:---|:---|:---|
 | `OPENAI_API_KEY` | 태그 보정, 제목 생성 | 선택 |
 | `KAGGLE_USERNAME`, `KAGGLE_KEY` | 트렌드 데이터 수집 | 선택 |
 | `YOUTUBE_API_KEY` | 카테고리 메타데이터 수집 | 선택 |
 | `PORT` | 서버 포트 (기본값 8001) | 선택 |
 
-</div>
-
 조회수 예측과 기본 태그 추천은 API 키 없이도 동작합니다.
-
-<br/>
 
 ## API
 
-<div align="center">
-
 | Method | Endpoint | 설명 |
-|:---:|:---|:---|
+|:---|:---|:---|
 | `POST` | `/api/auth/register` | 회원가입 |
 | `POST` | `/api/auth/login` | 로그인 |
 | `POST` | `/api/auth/logout` | 로그아웃 |
@@ -147,12 +112,8 @@ export PORT=8002
 | `POST` | `/api/titles/generate` | 제목 생성 |
 | `POST` | `/api/trends/update-month` | 월별 트렌드 분석 |
 
-</div>
-
 <details>
 <summary><b>사용 예시</b></summary>
-
-<br/>
 
 **조회수 예측**
 ```python
@@ -197,14 +158,10 @@ for title in response.json()["titles"]:
 
 </details>
 
-<br/>
-
 ## 배포
 
 Railway에 배포했습니다. 저장소를 연결하고 Variables 탭에 환경 변수를 등록하면 자동 배포됩니다.
 ML 모델은 첫 실행 시 Hugging Face Hub에서 내려받으며, `youtube_analytics.db`는 영구 스토리지에 마운트해야 데이터가 유지됩니다.
-
-<br/>
 
 ## 라이선스
 
