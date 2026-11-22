@@ -12,7 +12,6 @@
 
 - [라이브 데모](https://yudaag.github.io/youtube/index.html)
 
----
 
 ## 주요 기능
 
