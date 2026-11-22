@@ -162,7 +162,3 @@ for title in response.json()["titles"]:
 
 Railway에 배포했습니다. 저장소를 연결하고 Variables 탭에 환경 변수를 등록하면 자동 배포됩니다.
 ML 모델은 첫 실행 시 Hugging Face Hub에서 내려받으며, `youtube_analytics.db`는 영구 스토리지에 마운트해야 데이터가 유지됩니다.
-
-## 라이선스
-
-[MIT License](LICENSE)
