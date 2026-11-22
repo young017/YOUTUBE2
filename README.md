@@ -1,9 +1,3 @@
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
-[![Railway](https://img.shields.io/badge/Deploy-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://railway.app/)
-
 # 유튜브 영상 제작을 위한 맞춤형 피드백 서비스
 
 2025 유튜브 영상 데이터를 기반으로, 분석부터 맞춤형 피드백까지
@@ -11,13 +5,12 @@
 
 - [데모](https://yudaag.github.io/youtube/index.html)
 
-
 ## 주요 기능
 
-- **조회수 예측**: 카테고리별 최적화된 ML 모델(CatBoost, LightGBM, XGBoost)로 업로드 전 예상 조회수와 인기 확률을 예측합니다.
-- **AI 태그 추천**: SBERT 기반 시맨틱 유사도와 OpenAI 임베딩을 결합한 하이브리드 태그 추천으로 최적의 태그를 제안합니다.
-- **제목 자동 생성**: GPT 기반 SEO 최적화 제목 생성기로 클릭률을 높이는 제목을 자동으로 만들어 줍니다.
-- **트렌드 분석**: Kaggle YouTube 데이터를 기반으로 월별 인기 카테고리 트렌드를 분석하고 시각화합니다.
+- **조회수 예측**: 카테고리별 최적화된 ML 모델로 업로드 전 예상 조회수와 인기 확률을 예측합니다.
+- **AI 태그 추천**: 시맨틱 유사도와 임베딩을 결합한 하이브리드 방식으로 최적의 태그를 제안합니다.
+- **제목 자동 생성**: SEO에 최적화된 제목을 자동으로 만들어 줍니다.
+- **트렌드 분석**: 월별 인기 카테고리 트렌드를 분석하고 시각화합니다.
 
 ## 기술 스택
 
@@ -91,7 +84,6 @@ PORT=8001
 ```
 
 > 핵심 기능(조회수 예측, 기본 태그 추천)은 API 키 없이도 동작합니다.
-> OpenAI, Kaggle, YouTube API 키는 해당 기능 사용 시에만 필요합니다.
 
 ## API 레퍼런스
 
@@ -207,7 +199,6 @@ YOUTUBE2/
 
 ### 배포 시 주의사항
 
-- 모든 환경 변수를 서버에 등록하세요.
 - ML 모델은 첫 실행 시 Hugging Face Hub에서 자동으로 다운로드됩니다.
 - `youtube_analytics.db`는 영구 스토리지에 마운트하여 데이터 손실을 방지하세요.
 
