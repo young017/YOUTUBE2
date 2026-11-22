@@ -87,7 +87,3 @@ print(response.json()["recommended_tags"])
 ```
 
 전체 API 목록과 요청·응답 형식은 서버 실행 후 `/docs`에서 확인할 수 있습니다.
-
-## 라이선스
-
-[MIT License](LICENSE)
